@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
-    width:500px;
+    width:405px;
     margin: 0 auto;
     border-color: black;
     border-width: 10px;
@@ -55,7 +55,7 @@ header{
     background-image: linear-gradient(top, #666, #111);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
-    width:780px;
+    width:1100px;
     margin: 0 auto;
     text-align: center;
     border-color: black;
@@ -66,7 +66,11 @@ header{
 }
 
 #contenido{
-	margin: 50px;
+	margin-top: 50px;
+	margin-left: 80px;
+	margin-bottom: 50px;
+	width: 1100px;
+	float: left;
 }
 
 #section1{
@@ -97,7 +101,7 @@ header{
     background-image: linear-gradient(top, #666, #111);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
-    width:500px;
+    width:405px;
     margin: 0 auto;
     text-align: center;
     border-color: black;
@@ -119,7 +123,7 @@ header.inner-header{
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
-    width:780px;
+    width:1100px;
     margin: 0 auto;
     border-color: black;
     border-width: 10px;
@@ -128,7 +132,9 @@ header.inner-header{
 }
 
 h1{
-	text-align: center;
+	text-align: left;
+	margin-left: 20px;
+	margin-bottom: 0px;
 }
 
 .navButton{
@@ -146,21 +152,25 @@ nav{
     -moz-border-radius:10px;/*Para Firefox*/
     -o-border-radius:10px;/*Para Opera*/
     border-radius:10px;/*El estandar por defecto*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#888));/*Para chrome y Safari*/
     /*Degradados*/
-    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
-    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
-    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    background-image: -moz-linear-gradient(top center, #CCC, #888);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #CCC, #888);/*Para Opera*/
+    background-image: linear-gradient(top, #CCC, #888);/*El estandar por defecto*/
     overflow:hidden;
     height: 30px;
     vertical-align: middle;
     padding:0px;
     width:850px;
-    margin: 10px auto;
+    margin: 50px auto;
     text-align: center;
     border-color: black;
     border-width: 5px;
     border-style: solid;
+}
+
+.hidden{
+	visibility: hidden;
 }
 
 nav ul{
