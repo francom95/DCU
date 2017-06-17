@@ -1,3 +1,7 @@
+body{
+	background-color: #EEE;
+}
+
 .container{
 	-webkit-border-radius:10px;/*Para chrome y Safari*/
     -moz-border-radius:10px;/*Para Firefox*/
@@ -44,11 +48,11 @@ header{
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(#111));/*Para chrome y Safari*/
     /*Degradados*/
-    background-image: -moz-linear-gradient(top center, #555, #000);/*Para Firefox*/
-    background-image: -o-linear-gradient(top, #000, #CCC);/*Para Opera*/
-    background-image: linear-gradient(top, #000, #CCC);/*El estandar por defecto*/
+    background-image: -moz-linear-gradient(top center, #666, #111);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #666, #111);/*Para Opera*/
+    background-image: linear-gradient(top, #666, #111);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
     width:780px;
@@ -86,11 +90,11 @@ header{
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(#111));/*Para chrome y Safari*/
     /*Degradados*/
-    background-image: -moz-linear-gradient(top center, #555, #000);/*Para Firefox*/
-    background-image: -o-linear-gradient(top, #000, #CCC);/*Para Opera*/
-    background-image: linear-gradient(top, #000, #CCC);/*El estandar por defecto*/
+    background-image: -moz-linear-gradient(top center, #666, #111);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #666, #111);/*Para Opera*/
+    background-image: linear-gradient(top, #666, #111);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
     width:500px;
@@ -123,6 +127,20 @@ header.inner-header{
 	float: center;
 }
 
+h1{
+	text-align: center;
+}
+
+.navButton{
+	color: black;
+	text-decoration: none;
+}
+
+#lastButton{
+	border-right-color: black;
+    border-right-style: none;
+}
+
 nav{
 	-webkit-border-radius:10px;/*Para chrome y Safari*/
     -moz-border-radius:10px;/*Para Firefox*/
@@ -134,13 +152,15 @@ nav{
     background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
-    padding:10px;
-    width:780px;
-    margin: 0 auto;
+    height: 30px;
+    vertical-align: middle;
+    padding:0px;
+    width:850px;
+    margin: 10px auto;
     text-align: center;
     border-color: black;
-    border-width: 10px;
-    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
 }
 
 nav ul{
@@ -151,16 +171,19 @@ nav ul{
 
 nav ul li{
     /*Bordes redondeados*/
-    -webkit-border-radius:5px;/*Chrome y Safari*/
-    -moz-border-radius:5px;/*Firefox*/
-    -o-border-radius:5px;/*Opera*/
-    border-radius:5px;/*Estandar por defecto*/
     float:left;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     font-weight:bold;
-    margin-right:10px;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right:0px;
     text-align:center;
     /*Sombras para texto, los mismos parametros que box-shadow*/
     text-shadow: 0px 1px 0px #FFF;
+    border-right-color: black;
+    border-right-style: solid;
+    height: 30px;
+    line-height: 30px;
 }
