@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-<meta charset="UTF-8">
-<title>Ministerio de La Plata</title>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<header>
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
-		<a href="help.html">Ayuda</a>
-		<form method=get>
-			<input type="text" aria-label="buscar denuncia"></input>
-			<input type="submit" aria-label="realizar busqueda" value=guardar>
-		</form>
+		<div class="barraDerecha">
+			<table>
+				<tr><td><a href="help.html">Ayuda</a></td><td><form method="get">
+				<input type="text" aria-label="buscar denuncia"></input>
+				<input type="submit" aria-label="realizar busqueda" value="Buscar">
+			</form>
+</td></tr>
+			</table>
+		</div>
 	</header>
 	<nav>
 		<ul>
@@ -29,8 +34,8 @@
 	</div>
 	<main id="main">
 	<!--header interno -->
+	<div class="boxTitle">Bienvenido al sistema de denuncias en linea</div>
 	<header class="inner-header">
-		<h2> Bienvenido al sistema de denuncias en linea</h2>
 		<p> Mediante este sistema usted podra denunciar por internet los siguientes hechos:</p>
 		<ul>
 			<li>Suspension incorrecta de algun servicio</li>
@@ -39,28 +44,35 @@
 			<li>Inadeacuada atencion al cliente de alguna sucursal de algun servicio</li>
 			<li>Algun otro tipo de denuncia relacionado con algun servicio</li>
 		</ul>
-		<p> Una vez hecha la denuncia por internte, para que la misma tenga validez juridica debera ratificarse mdiante firma en un plazo de 48 horas en la comisaria mas proxima
-		</p>
+		<b> Una vez hecha la denuncia por internte, para que la misma tenga validez juridica debera ratificarse mdiante firma en un plazo de 48 horas en la comisaria mas proxima
+		</b>
 	</header>
-	<section class="video-container">
-		<h2>Aprende a realizar tu denuncia</h2>
-		<video width="320" height="240" controls>
-  		<source src="mov_bbb.mp4" type="video/mp4">
-		Su navegador no puede reproducir este video
-		</video>
-	</section>
-	<section>
-		<h2>Ultimas denuncias</h2>
-		<ul>
-			<li><a href="mostrar-denuncia.html">2 dias sin luz!! - 20 de Junio de 2017</a></li>
-			<li><a href="mostrar-denuncia.html"> Hace 10 dias que nos dicen que van a arreglar el telefono - 19 de Junio de 2017 </a></li>
-			<li><a href="mostrar-denuncia.html"> El malhablar de los empleados de EDELAP - 18 de Junio de 2017</a></li>
-			<li><a href="mostrar-denuncia.html">No me llegan las facturas de luz - 16 de Mayo de 2017 </a></li>
-			<li><a href="mostrar-denuncia.html">Devuelvanme la plata de los 2 meses sin luz - 12 de Abril de 2017</a></li>
-		</ul>
-	</section>
+	<section id="contenido">
+		<div id="section1">
+			<div class="boxTitleContainer">Aprende a realizar tu denuncia</div>
+			<div class="container">
+				<video width="320" height="240" controls>
+	  			<source src="mov_bbb.mp4" type="video/mp4">
+				Su navegador no puede reproducir este video
+				</video>
+			</div>
+		</div>
+		<div id="section2">
+			<div class="boxTitleContainer">Ultimas denuncias</div>
+			<div class="container">
+				<ul>
+					<li><a href="mostrar-denuncia.html">2 dias sin luz!! - 20 de Junio de 2017</a></li>
+					<li><a href="mostrar-denuncia.html"> Hace 10 dias que nos dicen que van a arreglar el telefono - 19 de Junio de 2017 </a></li>
+					<li><a href="mostrar-denuncia.html"> El malhablar de los empleados de EDELAP - 18 de Junio de 2017</a></li>
+					<li><a href="mostrar-denuncia.html">No me llegan las facturas de luz - 16 de Mayo de 2017 </a></li>
+					<li><a href="mostrar-denuncia.html">Devuelvanme la plata de los 2 meses sin luz - 12 de Abril de 2017</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>		
 </main>
-	
+	<hr>
+
 	<footer>
 		<!--Revisar si tendria que tener un tag especial-->
 		MINISTERIO DE LA PLATA - Republic Federal Argentina 1900- Telefono +54(0221) 454-6325
