@@ -1,15 +1,62 @@
-	<h2>Paso 2: Tipo de denuncia</h2>
-	<form id="denunciaPaso2" action="">
-		<div id="filaFormulario">
-		<p>Seleccione el tipo de denuncia:</p>
-		<input type="radio" name="tipoDenuncia" id="tipo1" value="Valor1"> <label for="tipo1">Suspension incorrecta de algun servicio.</label>
-		<input type="radio" name="tipoDenuncia" id="tipo2" value="Valor2"> <label for="tipo2">Falta de soporte tecnico de algun servicio.</label>
-		<input type="radio" name="tipoDenuncia" id="tipo3" value="Valor3"> <label for="tipo3">Deficiencias en la calidad de algun servicio.</label>
-		<input type="radio" name="tipoDenuncia" id="tipo4" value="Valor4"> <label for="tipo4">Inadecuada atencion al cliente de alguna sucursal de algun servicio.</label>
-		<input type="radio" name="tipoDenuncia" id="tipo5" value="Valor5"> <label for="tipo5">Algun otro tipo de denuncia relacionada con algun servicio.</label>
-		</div>
-		<div id="botonesDenuncia">
-			<form action="RealizarDenuncia1.html"><input type="submit" name="submit" value="Volver"/></form>
-			<input type="submit" name="submit" value="Continuar"/>
-		</div>
-	</form>
+    <!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<title>Ministerio de La Plata</title>
+</head>
+<body>
+    <header>
+        <h1>MINISTERIO DE LA PLATA</h1>
+        <a class="hidden" href="#main">Ir al contenido principal</a>
+        <a href="help.html">Ayuda</a>
+        <form method=get>
+            <input type="text" aria-label="buscar denuncia" ></input>
+            <input type="submit" aria-label="realizar busqueda" value=guardar>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="realizar-denuncia.html">Realizar Denuncia</a></li> 
+            <li><a href="seguimiento-denuncia.html">Seguimiento de Denuncias</a></li>
+            <li><a href="listado-denuncias.html">Lista de Denuncias</a></li>
+            <li><a href ="estadisticas.html">Estadisticas</a></li>
+            <li><a href ="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="profile">
+        Diego Perez
+    </div>
+    <main id="main">
+        <h2>Paso 2: Tipo de denuncia</h2>
+        <form id="denunciaPaso2" action="">
+            <fieldset>
+                <legend>
+                    <p>Seleccione el tipo de denuncia:</p>
+                </legend>
+                <input type="radio" name="tipoDenuncia" id="tipo1"> 
+                <label for="tipo1">Suspension incorrecta de algun servicio.</label>
+                <input type="radio" name="tipoDenuncia" id="tipo2"> 
+                <label for="tipo2">Falta de soporte tecnico de algun servicio.</label>
+                <input type="radio" name="tipoDenuncia" id="tipo3"> 
+                <label for="tipo3">Deficiencias en la calidad de algun servicio.</label>
+                <input type="radio" name="tipoDenuncia" id="tipo4"> 
+                <label for="tipo4">Inadecuada atencion al cliente de alguna sucursal de algun servicio.</label>
+                <input type="radio" name="tipoDenuncia" id="tipo5"> 
+                <label for="tipo5">Algun otro tipo de denuncia relacionada con algun servicio.</label>
+            </fieldset>
+            <div id="botonesDenuncia">
+                <form action="RealizarDenuncia1.html"><input type="submit" name="submit" value="Volver"/></form>
+                <input type="submit" name="submit" value="Continuar"/>
+            </div>
+        </form>
+        <p>* Campo obligatorio</p>
+</main>
+    
+    <footer>
+        <!--Revisar si tendria que tener un tag especial-->
+        MINISTERIO DE LA PLATA - Republic Federal Argentina 1900- Telefono +54(0221) 454-6325
+    </footer>
+
+</body>
+</html>
