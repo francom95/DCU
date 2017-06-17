@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-<meta charset="UTF-8">
-<title>Ministerio de La Plata</title>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<header>
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
-		<a href="help.html">Ayuda</a>
-		<form method=get>
-			<input type="text" aria-label="buscar denuncia"></input>
-			<input type="submit" aria-label="realizar busqueda" value="guardar">
-		</form>
+		<div class="barraDerecha">
+			<table>
+				<tr><td><a href="iniciar-sesion.html">Iniciar Sesion</a></td><td><a href="help.html">Ayuda</a></td><td><form method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form></td></tr>
+			</table>
+		</div>
 	</header>
 	<nav>
 		<ul>
-	  		<li><a href="index.html">Inicio</a></li>
-	  		<li><a href="realizar-denuncia.html">Realizar Denuncia</a></li> 
-	  		<li><a href="seguimiento-denuncia.html">Seguimiento de Denuncias</a></li>
-	  		<li><a href="listado-denuncias.html">Lista de Denuncias</a></li>
-	  		<li><a href ="estadisticas.html">Estadisticas</a></li>
-	  		<li><a href ="contacto.html">Contacto</a></li>
+	  		<li><a class="navButton" href=#>Inicio</a></li>
+	  		<li><a class="navButton" href="realizar-denuncia.html">Realizar Denuncia</a></li> 
+	  		<li><a class="navButton" href="seguimiento-denuncia.html">Seguimiento de Denuncias</a></li>
+	  		<li><a class="navButton" href="listado-denuncias.html">Lista de Denuncias</a></li>
+	  		<li><a class="navButton" href ="estadisticas.html">Estadisticas</a></li>
+	  		<li id="lastButton"><a class="navButton" href ="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
-	<div id="iniciar-sesion">
-	<a href="iniciar-sesion.html">Iniciar Sesion</a>
-	</div>
 	<main id="main">
-		<!--header interno -->
+	<!--header interno -->
+		<div class="boxTitle">Bienvenido al sistema de denuncias en linea</div>
 		<header class="inner-header">
 			<h2> Bienvenido al sistema de denuncias en linea</h2>
 			<p> Para realizar su denuncia primero inicie sesion:</p>
