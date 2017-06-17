@@ -25,6 +25,7 @@ body{
 footer{
 	width: 1000px;
 	float: bottom;
+	text-align: center;
 }
 
 header{
@@ -145,6 +146,10 @@ h1{
 #lastButton{
 	border-right-color: black;
     border-right-style: none;
+}
+
+hr{
+	width: 100%;
 }
 
 nav{
