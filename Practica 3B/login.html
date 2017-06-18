@@ -2,7 +2,7 @@
 <html lang="es-AR">
 <head>
 	<meta charset="UTF-8">
-	<title>Inicio</title>
+	<title>Iniciar Sesion</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -27,23 +27,24 @@
 	</nav>
 	<main id="main">
 	<!--header interno -->
-		<div class="boxTitle">Bienvenido al sistema de denuncias en linea</div>
-		<header class="inner-header">
-			<h2> Bienvenido al sistema de denuncias en linea</h2>
-			<p> Para realizar su denuncia primero inicie sesion:</p>
-		</header>
-		<section>
-			<h2> Ingreso al sistema de Denuncias</h2>
-			<form>
-				<label for="usuario">Usuario: </label>
-				<input type="text" name="usuario" id="usuario"></input>
-				<label for="contrasena">Contraseña:</label>
-				<input type="password"id="contrasena"></input>
-			<input type="submit" aria-label="Iniciar Sesión" value="Iniciar Sesión">
-			</form>
-		</section>
+	<div class="boxTitle">Bienvenido al sistema de denuncias en linea</div>
+	<header class="inner-header">
+		<h2> Ingreso al sistema de Denuncias</h2>
+		<form>
+			<div class="filaFormulario">
+				<label for="usuario">Usuario: </label><input type="text" name="usuario" id="usuario"></input>
+			</div>
+			<div class="filaFormulario">
+				<label for="contrasena">Contraseña:</label><input type="password"id="contrasena"></input>
+			</div>
+			<div class="botonesDenuncia">
+				<div class="boton"><input type="submit" aria-label="Iniciar Sesión" value="Iniciar Sesión"></div>
+			</div>
+		</form>
+	</header>
 	</main>
-	
+
+	<hr>
 	<footer>
 		<!--Revisar si tendria que tener un tag especial-->
 		MINISTERIO DE LA PLATA - Republic Federal Argentina 1900- Telefono +54(0221) 454-6325
