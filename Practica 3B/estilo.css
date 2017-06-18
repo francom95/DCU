@@ -66,6 +66,36 @@ header{
 	color: white;
 }
 
+.boxTitleLeft{
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-top-left: 10px;
+	-moz-border-radius-top-right: 10px;
+	-moz-border-radius-bottom-left: 0px;
+	-moz-border-radius-bottom-right: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666), to(#111));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #666, #111);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #666, #111);/*Para Opera*/
+    background-image: linear-gradient(top, #666, #111);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    width:1100px;
+    margin: 0 auto;
+    text-align: left;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+	float: center;
+	color: white;
+}
+
 #contenido{
 	margin-top: 50px;
 	margin-left: 80px;
@@ -80,6 +110,15 @@ header{
 
 #section2{
 	float: right;
+}
+
+.labelCompleto{
+	float: left;
+	width: 75%;
+}
+
+.primeraFila{
+	float: left;
 }
 
 .boxTitleContainer{
@@ -132,10 +171,83 @@ header.inner-header{
 	float: center;
 }
 
+.boton{
+	float: right;
+}
+
+.botonesDenuncia{
+	margin-top: 10px;
+	width: 500px;
+	margin-bottom: 10px;
+}
+
 h1{
 	text-align: left;
 	margin-left: 20px;
 	margin-bottom: 0px;
+}
+
+.cuartaFila{
+	margin-left: 0px;
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+.terceraFila{
+	margin-left: 50px;
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+
+
+.siguienteRatio{
+    display: block;
+     float: left;
+     margin-left: -120px;
+}
+
+.segundaFilaRatio{
+    display: block;
+     float: left;
+}
+
+.segundaFila {
+     display: block;
+     float: left;
+     width: 270px;
+}
+
+label {
+	display: block;
+	float: left;
+    text-align: left;
+    width: 200px;
+    padding-right: 20px;
+}
+
+label.masculinoRatio{
+    display: block;
+    float: left;
+}
+
+label.femeninoRatio{
+    display: block;
+    float: left;
+    margin-left: -100px;
+}
+
+div.filaFormulario{
+	margin-top: 30px;
+	margin-bottom: 30px;
+    clear: left;
+ }
+
+label#nroDoc{
+	float:right;
+	margin-right: 100px;
 }
 
 .navButton{
@@ -149,8 +261,22 @@ h1{
 }
 
 hr{
+	margin-top: 20px;
+	width: 100%;
+	border-style: dashed;
+}
+
+hr#index{
 	margin-top: 450px;
 	width: 100%;
+	border-style: dashed;
+}
+
+textarea{
+	float: left;
+	width: 240px;
+	height: 50px;
+	margin-bottom: 20px;
 }
 
 nav{
