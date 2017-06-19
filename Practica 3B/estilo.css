@@ -306,7 +306,7 @@ nav{
 }
 
 .hidden{
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 nav ul{
@@ -370,5 +370,11 @@ table#listado-denuncias{
     height: 30px;
     line-height: 30px;
 }
-
+.label-radio2 {
+    display: block;
+    float: left;
+    text-align: left;
+    width: 50em;
+    padding-right: 20px;
+}
 
