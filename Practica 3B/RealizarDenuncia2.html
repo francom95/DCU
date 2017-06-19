@@ -10,9 +10,7 @@
         <h1>MINISTERIO DE LA PLATA</h1>
         <a class="hidden" href="#main">Ir al contenido principal</a>
         <div class="barraDerecha">
-            <table>
-                <tr><td><a href="iniciar-sesion.html">Iniciar Sesion</a></td><td><a href="help.html">Ayuda</a></td><td><form method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form></td></tr>
-            </table>
+            Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
         </div>
     </header>
     <nav>
@@ -53,21 +51,26 @@
                 <legend>
                     <p>Seleccione el tipo de denuncia:</p>
                 </legend>
-                <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo1"> 
-                <label for="tipo1" class="label-radio2">Suspension incorrecta de algun servicio.</label>
-                <br>
-                <input type="radio" class="primeraFila"  name="tipoDenuncia" id="tipo2"> 
-                <label for="tipo2" class="label-radio2">Falta de soporte tecnico de algun servicio.</label>
-                <br>
-                <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo3"> 
-                <label for="tipo3" class="label-radio2">Deficiencias en la calidad de algun servicio.</label>
-                <br>
-                <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo4"> 
-                <label for="tipo4" class="label-radio2">Inadecuada atencion al cliente de alguna sucursal de algun servicio.</label>
-                <br>
-                <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo5"> 
-                <label for="tipo5" class="label-radio2">Algun otro tipo de denuncia relacionada con algun servicio.</label>
-                <br>
+                <div class="filaFormularioPrimera">
+                    <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo1"> 
+                    <label for="tipo1" class="label-radio2">Suspension incorrecta de algun servicio.</label>
+                </div>
+                <div class="filaFormulario">
+                    <input type="radio" class="primeraFila"  name="tipoDenuncia" id="tipo2"> 
+                    <label for="tipo2" class="label-radio2">Falta de soporte tecnico de algun servicio.</label>
+                </div>
+                <div class="filaFormulario">
+                    <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo3"> 
+                    <label for="tipo3" class="label-radio2">Deficiencias en la calidad de algun servicio.</label>
+                </div>
+                <div class="filaFormulario">
+                    <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo4"> 
+                    <label for="tipo4" class="label-radio2">Inadecuada atencion al cliente de alguna sucursal de algun servicio.</label>
+                </div>
+                <div class="filaFormulario">
+                    <input type="radio" class="primeraFila" name="tipoDenuncia" id="tipo5"> 
+                    <label for="tipo5" class="label-radio2">Algun otro tipo de denuncia relacionada con algun servicio.</label>
+                </div>
             </fieldset>&nbsp;
             <div class="botonesDenuncia">
                 <div class="boton"><input type="submit" name="submit" value="Continuar" /></div>

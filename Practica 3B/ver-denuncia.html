@@ -2,7 +2,7 @@
 <html lang="es-AR">
 <head>
 	<meta charset="UTF-8">
-	<title>Inicio</title>
+	<title>Lista de Denuncias</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,9 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			<table>
-				<tr><td>Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a>&nbsp;&nbsp;</td><td><a href="help.html">Ayuda</a></td><td><form method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form></td></tr>
-			</table>
+			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
 		</div>
 	</header>
 	<nav>
@@ -26,20 +24,36 @@
 		</ul>
 	</nav>
 	<main id="main">
-			<h3> Listado de denuncias - Ver denuncia</h3>
-			<article id="denuncia">
-				<h4>Titulo de la denuncia</h4>
-				<p>Desarrollo de la denuncia</p>
+	<div class="boxTitleLeft">Listado de denuncias - Ver denuncia</div>
+	<header class="inner-header">
+		<article class="recuadroDenuncia" id="denuncia">
+			<h4>Titulo de la denuncia</h4>
+			<p>Desarrollo de la denuncia</p>
+		</article>
+		<section class="seccionComentarios" id="comentarios">
+			<article class="recuadroComentario">
+				<b>Antonio</b>
+				<p>Apoyo tu denuncia!! Apoyo tu denuncia!! Apoyo tu denuncia!! Apoyo tu denuncia!! Apoyo tu denuncia!!</p>
 			</article>
-			<section id="comentarios">
-				<article>
-					<p> Antonio</p>
-					<p>Apoyo tu denuncia!!</p>
-				</article>
-				<article>
-					<p>Graciela</p>
-					<p>Estoy de acuerdo con lo que decis</p>
-				</article>
-			</section>
-
+			<article class="recuadroComentario">
+				<b>Graciela</b>
+				<p>Estoy de acuerdo con lo que decis</p>
+			</article>
+		</section>
+		<section class="comentarDenuncia">
+			<form method="post" action="">
+				<label for="comentario">Comentar: </label><input type="text" name="comentario" id="comentario" required /> <input type="submit" name="agregar" id="agregar" value="Agregar Comentario"> <span>Solo se permite comentar a usuarios registrados</span>
+			</form>
+		</section>
+		<section class="botonesDenuncia">
+			<form method="get" action=""><input type="submit" class="boton" name="volver" id="volver" value="Volver"></form>
+		</section>
+	</header>
 	</main>
+	<hr>
+	<footer>
+		<!--Revisar si tendria que tener un tag especial-->
+		MINISTERIO DE LA PLATA - Republic Federal Argentina 1900- Telefono +54(0221) 454-6325
+	</footer>
+</body>
+</html>

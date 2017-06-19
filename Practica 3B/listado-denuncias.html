@@ -2,7 +2,7 @@
 <html lang="es-AR">
 <head>
 	<meta charset="UTF-8">
-	<title>Inicio</title>
+	<title>Lista de denuncias</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,9 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			<table>
-				<tr><td>Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a>&nbsp;&nbsp;</td><td><a href="help.html">Ayuda</a></td><td><form method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form></td></tr>
-			</table>
+			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
 		</div>
 	</header>
 	<nav>
@@ -26,10 +24,8 @@
 		</ul>
 	</nav>
 	<main>
-		<div id= "contenido">
-			<div id="table-header">
-				<h4>Listado de denuncias</h4>
-			</div>
+		<div class="boxTitleLeft">Listado de denuncias</div>
+		<header class="inner-header">
 			<table id="listado-denuncias">
 				<tr>
 					<th scope="col" class="table-header">Título</th>
@@ -38,37 +34,37 @@
 					<th scope="col" class="table-header">Acciones</th>
 				</tr>
 				<tr>
-					<th scope="row" class="row-header"><a href="ver-denuncia.html">2 dias sin luz!!</a></th>
-					<td> 20 de Junio de 2017</td>
-					<td>2 votos a favor</td>
-					<td><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					<th scope="row" class="table-left"><a href="ver-denuncia.html">2 dias sin luz!!</a></th>
+					<td class="table-left">20 de Junio de 2017</td>
+					<td class="table-left">2 votos a favor</td>
+					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
 				<tr>
-					<th scope="row" class="row-header"><a href="ver-denuncia.html">Hace 10 dias que nos dicen que van a arreglar el teléfono</a></th>
-					<td> 19 de Junio de 2017</td>
-					<td>0 votos a favor</td>
-					<td><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					<th scope="row" class="table-left"><a href="ver-denuncia.html">Hace 10 dias que nos dicen que van a arreglar el teléfono</a></th>
+					<td class="table-left"> 19 de Junio de 2017</td>
+					<td class="table-left">0 votos a favor</td>
+					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
 				<tr>
-					<th scope="row" class="row-header"><a href="ver-denuncia.html">El malhabla de los empleados de EDLAP</a></th>
-					<td> 18 de Junio de 2017</td>
-					<td>5 votos a favor</td>
-					<td><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					<th scope="row" class="table-left"><a href="ver-denuncia.html">El malhabla de los empleados de EDLAP</a></th>
+					<td class="table-left"> 18 de Junio de 2017</td>
+					<td class="table-left">5 votos a favor</td>
+					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
 				<tr>
-					<th scope="row" class="row-header"><a href="ver-denuncia.html">No me llegan las facturas de luz</a></th>
-					<td> 16 de Mayo de 2017</td>
-					<td>2 votos a favor</td>
-					<td><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					<th scope="row" class="table-left"><a href="ver-denuncia.html">No me llegan las facturas de luz</a></th>
+					<td class="table-left"> 16 de Mayo de 2017</td>
+					<td class="table-left">2 votos a favor</td>
+					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
 				<tr>
-					<th scope="row" class="row-header"><a href="ver-denuncia.html">Devuelvanme la plata de 2 meses sin luz</a></th>
-					<td> 12 de abril de 2017</td>
-					<td>1 votos a favor</td>
-					<td><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					<th scope="row" class="table-bottom-left"><a href="ver-denuncia.html">Devuelvanme la plata de 2 meses sin luz</a></th>
+					<td class="table-bottom"> 12 de abril de 2017</td>
+					<td class="table-bottom">1 votos a favor</td>
+					<td class="table-bottom-right"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
 			</table>
-		</div>
+		</header>
 		</main>
 	<hr id="index">
 	<footer>

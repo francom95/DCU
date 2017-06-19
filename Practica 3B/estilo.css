@@ -2,6 +2,47 @@ body{
 	background-color: #EEE;
 }
 
+.seccionComentarios{
+	margin-left: 100px;
+	width: 450px;
+}
+
+.recuadroDenuncia{
+	width: 500px;
+	margin:20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0.2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-color: green;
+}
+
+input#comentario{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.comentarDenuncia{
+
+}
+
+.recuadroComentario{
+	margin: 20px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-color: blue;
+}
+
 .container{
 	-webkit-border-radius:10px;/*Para chrome y Safari*/
     -moz-border-radius:10px;/*Para Firefox*/
@@ -188,7 +229,7 @@ header.inner-header{
 h1{
 	text-align: left;
 	margin-left: 20px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 .cuartaFila{
@@ -232,16 +273,34 @@ label {
     padding-right: 20px;
 }
 
-label.masculinoRatio{
-    display: block;
-    float: left;
+fieldset#sexoForm{
+	width: 500px;
 }
 
-label.femeninoRatio{
+.masculinoRatio{
     display: block;
     float: left;
-    margin-left: -100px;
+    padding-right: 0px;
+    width: 100px;
 }
+
+.ratioSex{
+	display: block;
+	float: left;
+}
+
+.femeninoRatio{
+    display: block;
+    float: left;
+    padding-right: 0px;
+    width: 100px;
+}
+
+div.filaFormularioPrimera{
+	margin-top: 5px;
+	margin-bottom: 30px;
+    clear: left;
+ }
 
 div.filaFormulario{
 	margin-top: 30px;
@@ -333,6 +392,10 @@ nav ul li{
     height: 30px;
     line-height: 30px;
 }
+td{
+	font-style: solid;
+	font-weight: normal;
+}
 div#contenido{
     width: 1100px;
     margin-left: 150px;
@@ -347,7 +410,6 @@ table#listado-denuncias{
     color: black;
     padding-right: 10px;
     padding-left: 10px;
-    margin-right:0px;
     text-align:center;
     /*Sombras para texto, los mismos parametros que box-shadow*/
     text-shadow: 0px 1px 0px #FFF;
@@ -355,9 +417,11 @@ table#listado-denuncias{
     border-right-style: solid;
     height: 30px;
     line-height: 30px;
+    width: 1100px;
+    border-collapse: collapse;
 }
 .table-header{
-    font-weight: bold;
+	font-weight: bold;
     color: black;
     padding-right: 10px;
     padding-left: 10px;
@@ -365,6 +429,95 @@ table#listado-denuncias{
     text-align: center;
     border-color: black;
     border-style: solid;
+    border-width: thick;
+
+    height: 30px;
+    line-height: 30px;
+}
+.table-bottom{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+    border-color: black;
+    border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+    border-width: thick;
+
+    height: 30px;
+    line-height: 30px;
+}
+.table-bottom-left{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+    border-color: black;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-width: thick;
+
+    height: 30px;
+    line-height: 30px;
+}
+
+.searchForm{
+	float: right;
+}
+
+a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.table-bottom-right{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+    border-color: black;
+    border-bottom-style: solid;
+    border-right-style: solid;
+	border-width: thick;
+
+    height: 30px;
+    line-height: 30px;
+}
+.table-left{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+    border-color: black;
+    border-color: black;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: thick;
+
+    height: 30px;
+    line-height: 30px;
+}
+.table-right{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    text-align: center;
+    border-color: black;
+    border-color: black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
     border-width: thick;
 
     height: 30px;
