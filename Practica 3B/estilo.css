@@ -7,6 +7,14 @@ body{
 	width: 450px;
 }
 
+video{
+    width:320;
+    height:240;
+}
+
+caption{
+}
+
 .recuadroDenuncia{
 	width: 500px;
 	margin:20px;
@@ -356,7 +364,7 @@ nav{
     height: 30px;
     vertical-align: middle;
     padding:0px;
-    width:850px;
+    width:910px;
     margin: 50px auto;
     text-align: center;
     border-color: black;

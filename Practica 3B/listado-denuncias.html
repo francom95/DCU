@@ -10,7 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
+			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" id="denunciaTexto" name="denunciaTexto"><label for="denunciaTexto"></label><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
 		</div>
 	</header>
 	<nav>
@@ -23,16 +23,20 @@
 	  		<li id="lastButton"><a class="navButton" href ="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
-	<main>
-		<div class="boxTitleLeft">Listado de denuncias</div>
+	<main id="main">
+		<div class="boxTitleLeft">Denuncias</div>
 		<header class="inner-header">
 			<table id="listado-denuncias">
+				<caption>Listado de denuncias</caption>
+				<thead>
 				<tr>
 					<th scope="col" class="table-header">Título</th>
 					<th scope="col" class="table-header">Fecha</th>
 					<th scope="col" class="table-header">Votos</th>
 					<th scope="col" class="table-header">Acciones</th>
 				</tr>
+				</thead>
+				<tbody>
 				<tr>
 					<th scope="row" class="table-left"><a href="ver-denuncia.html">2 dias sin luz!!</a></th>
 					<td class="table-left">20 de Junio de 2017</td>
@@ -63,6 +67,7 @@
 					<td class="table-bottom">1 votos a favor</td>
 					<td class="table-bottom-right"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
 				</tr>
+				</tbody>
 			</table>
 		</header>
 		</main>
