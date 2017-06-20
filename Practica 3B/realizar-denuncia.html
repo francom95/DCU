@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Realizar Denuncia</title>
+	<title>Realizar Denuncia - Ministerio de La Plata</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,7 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
+			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" title="Buscar denuncia" id="buscarDenuncia"></input><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
 		</div>
 	</header>
 	<nav>
@@ -30,7 +30,7 @@
 		<h2>Paso 1: Datos personales y de contacto</h2>
 		<form id="denunciaPaso1" action="RealizarDenuncia2.html">
 			<div class="filaFormulario">
-				<label for="nombre">Nombre: </label><input class="segundaFila" type="text" name="nombre" name="nombre" aria-required="true" required />&nbsp;&nbsp;*
+				<label for="nombre">Nombre: </label><input class="segundaFila" type="text" name="nombre" id="nombre" aria-required="true" required />&nbsp;&nbsp;*
 			</div>
 			<div class="filaFormulario">
 				<label for="apellido">Apellido: </label> <input class="segundaFila" type="text" name="apellido" id="apellido" aria-required="true" required />&nbsp;&nbsp;*

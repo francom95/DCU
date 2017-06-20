@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Lista de denuncias</title>
@@ -10,7 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" id="denunciaTexto" name="denunciaTexto"><label for="denunciaTexto"></label><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
+			Bienvenido Pepito, esperamos que tengas un buen dia! <a href="#">Cerrar Sesion</a><a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" id="denunciaTexto" name="denunciaTexto" title="Buscar denuncia"><input type="submit" aria-label="realizar busqueda" value="Buscar"></form>
 		</div>
 	</header>
 	<nav>
@@ -29,52 +29,53 @@
 			<table id="listado-denuncias">
 				<caption>Listado de denuncias</caption>
 				<thead>
-				<tr>
-					<th scope="col" class="table-header">Título</th>
-					<th scope="col" class="table-header">Fecha</th>
-					<th scope="col" class="table-header">Votos</th>
-					<th scope="col" class="table-header">Acciones</th>
-				</tr>
+					<tr>
+						<th scope="col" id="titulo" class="table-header">Título</th>
+						<th scope="col" id="fecha" class="table-header">Fecha</th>
+						<th scope="col" id="votos" class="table-header">Votos</th>
+						<th scope="col" id="acciones" class="table-header">Acciones</th>
+					</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<th scope="row" class="table-left"><a href="ver-denuncia.html">2 dias sin luz!!</a></th>
-					<td class="table-left">20 de Junio de 2017</td>
-					<td class="table-left">2 votos a favor</td>
-					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
-				</tr>
-				<tr>
-					<th scope="row" class="table-left"><a href="ver-denuncia.html">Hace 10 dias que nos dicen que van a arreglar el teléfono</a></th>
-					<td class="table-left"> 19 de Junio de 2017</td>
-					<td class="table-left">0 votos a favor</td>
-					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
-				</tr>
-				<tr>
-					<th scope="row" class="table-left"><a href="ver-denuncia.html">El malhabla de los empleados de EDLAP</a></th>
-					<td class="table-left"> 18 de Junio de 2017</td>
-					<td class="table-left">5 votos a favor</td>
-					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
-				</tr>
-				<tr>
-					<th scope="row" class="table-left"><a href="ver-denuncia.html">No me llegan las facturas de luz</a></th>
-					<td class="table-left"> 16 de Mayo de 2017</td>
-					<td class="table-left">2 votos a favor</td>
-					<td class="table-left"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
-				</tr>
-				<tr>
-					<th scope="row" class="table-bottom-left"><a href="ver-denuncia.html">Devuelvanme la plata de 2 meses sin luz</a></th>
-					<td class="table-bottom"> 12 de abril de 2017</td>
-					<td class="table-bottom">1 votos a favor</td>
-					<td class="table-bottom-right"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
-				</tr>
+					<tr>
+						<td class="table-left" headers="titulo"><a href="ver-denuncia.html">2 dias sin luz!!</a></th>
+						<td class="table-left" headers="fecha">20 de Junio de 2017</td>
+						<td class="table-left" headers="votos">2 votos a favor</td>
+						<td class="table-left" headers="acciones"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					</tr>
+					<tr>
+						<td class="table-left" headers="titulo"><a href="ver-denuncia.html">Hace 10 dias que nos dicen que van a arreglar el teléfono</a></th>
+						<td class="table-left" headers="fecha"> 19 de Junio de 2017</td>
+						<td class="table-left" headers="votos">0 votos a favor</td>
+						<td class="table-left" headers="acciones"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					</tr>
+					<tr>
+						<td class="table-left" headers="titulo"><a href="ver-denuncia.html">El malhabla de los empleados de EDLAP</a></th>
+						<td class="table-left" headers="fecha"> 18 de Junio de 2017</td>
+						<td class="table-left" headers="votos">5 votos a favor</td>
+						<td class="table-left" headers="acciones"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					</tr>
+					<tr>
+						<td class="table-left" headers="titulo"><a href="ver-denuncia.html">No me llegan las facturas de luz</a></th>
+						<td class="table-left" headers="fecha"> 16 de Mayo de 2017</td>
+						<td class="table-left" headers="votos">2 votos a favor</td>
+						<td class="table-left" headers="acciones"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					</tr>
+					<tr>
+						<td class="table-bottom-left" headers="titulo"><a href="ver-denuncia.html">Devuelvanme la plata de 2 meses sin luz</a></th>
+						<td class="table-bottom" headers="fecha"> 12 de abril de 2017</td>
+						<td class="table-bottom" headers="votos">1 votos a favor</td>
+						<td class="table-bottom-right" headers="acciones"><a href="apoyar-denuncia.html">Apoyar Denuncia</a></td>
+					</tr>
 				</tbody>
+				<summary>Este es el listado de denuncias del ministerio de La Plata</summary>
 			</table>
 		</header>
 		</main>
 	<hr id="index">
 	<footer>
 		<!--Revisar si tendria que tener un tag especial-->
-		MINISTERIO DE LA PLATA - Republic Federal Argentina 1900- Telefono +54(0221) 454-6325
+		MINISTERIO DE LA PLATA - Republica Federal Argentina 1900- Telefono +54(0221) 454-6325
 	</footer>
 
 </body>
