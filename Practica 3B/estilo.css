@@ -8,8 +8,8 @@ body{
 }
 
 video{
-    width:320;
-    height:240;
+    width:320px;
+    height:240px;
 }
 
 caption{
@@ -68,7 +68,6 @@ input#comentario{
     border-color: black;
     border-width: 10px;
     border-radius: 10px;
-	float: center;
 }
 
 footer{
@@ -111,7 +110,6 @@ header{
     border-color: black;
     border-width: 10px;
     border-radius: 10px;
-	float: center;
 	color: white;
 }
 
@@ -141,7 +139,6 @@ header{
     border-color: black;
     border-width: 10px;
     border-radius: 10px;
-	float: center;
 	color: white;
 }
 
@@ -196,7 +193,6 @@ header{
     border-color: black;
     border-width: 10px;
     border-radius: 10px;
-	float: center;
 	color: white;
 }
 
@@ -217,7 +213,6 @@ header.inner-header{
     border-color: black;
     border-width: 10px;
     border-radius: 10px;
-	float: center;
 }
 
 .boton{
@@ -346,7 +341,7 @@ hr#index{
 textarea{
 	float: left;
 	width: 240px;
-	height: 5f0px;
+	height: 520px;
 	margin-bottom: 20px;
 }
 
@@ -401,7 +396,7 @@ nav ul li{
     line-height: 30px;
 }
 td{
-	font-style: solid;
+	font-style: normal;
 	font-weight: normal;
 }
 div#contenido{
