@@ -542,3 +542,9 @@ input#boton-busqueda {
    z-index: 1;
    color: #4f5b66;
 }
+#en_construccion{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
