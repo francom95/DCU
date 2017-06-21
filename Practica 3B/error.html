@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Registro - Ministerio de La Plata</title>
+	<title>Error - Ministerio de La Plata</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,7 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			<a href="login.html">Iniciar Sesión</a>&nbsp;<a href="register.html">Registrarse</a>&nbsp;<a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" title="Buscar denuncia" id="buscarDenuncia" /><input id="boton-busqueda" type="image" alt="realizar busqueda" src="search-25.png" onsubmit="submit();" /></form>
+			<a href="login.html">Iniciar Sesión</a>&nbsp;<a href="register.html">Registrarse</a>&nbsp;<a href="help.html">Ayuda</a><form class="searchForm" method="get" action="buscarDenuncia.html"><input type="text" aria-label="buscar denuncia" title="Buscar denuncia" id="buscarDenuncia" /><input id="boton-busqueda" type="image" alt="realizar busqueda" src="search-25.png" onsubmit="submit();" /></form>
 		</div>
 	</header>
 	<nav>
@@ -25,10 +25,12 @@
 	</nav>
 	<main id="main">
 		<!--header interno -->
-		<div class="boxTitleLeft">Completar el formulario de registro</div>
+		<div class="boxTitleLeft">Ha ocurrido un error!</div>
 		<header class="inner-header">
-			Lo sentimos, este sitio está en construcción. Disculpe las molestias.
-			<img id="en_construccion" src="en_construccion.png" alt="El sitio está en construcción. Disculpe las molestias." />
+		Ha ocurrido un error. Presione en "Volver" y vuelva a intentarlo. Si el error persiste, es posible que el sistema no funcione de forma correcta actualmente. En dicho caso intente de nuevo más tarde o contáctenos para informar acerca del error. Muchas gracias.
+		<div class="botonesDenuncia">
+           	<div class="boton"><form action="index.html"><input type="submit" name="volver" value="Volver" /></form></div>
+        </div>
 		</header>	
 	</main>
 

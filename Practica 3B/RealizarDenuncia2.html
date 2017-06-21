@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Realizar Denuncia - Ministerio de La Plata</title>
     <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
     <div class="boxTitleLeft">Formulario de Denuncia</div>
     <header class="inner-header">
         <h2>Paso 2: Tipo de denuncia</h2>
-        <form id="denunciaPaso2" action="">
+        <form id="denunciaPaso2" action="#">
             <fieldset>
                 <legend>
                     Seleccione el tipo de denuncia:
@@ -55,8 +56,8 @@
                 </div>
             </fieldset>&nbsp;
             <div class="botonesDenuncia">
-                <div class="boton"><input type="submit" name="submit" value="Continuar" /></div>
-                <div class="boton"><input type="submit" name="submit" value="Volver" /></div>
+                <div class="boton"><input type="submit" name="continuar" value="Continuar" onsubmit="formDos('continuar')" /></div>
+                <div class="boton"><input type="submit" name="volver" value="Volver" onclick="formDos('volver')" /></div>
             </div>
         </form>
     </header>

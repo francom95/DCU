@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Registro - Ministerio de La Plata</title>
+	<title>Búsqueda de denuncias - Ministerio de La Plata</title>
 	<link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,7 +10,7 @@
 		<h1>MINISTERIO DE LA PLATA</h1>
 		<a class="hidden" href="#main">Ir al contenido principal</a>
 		<div class="barraDerecha">
-			<a href="login.html">Iniciar Sesión</a>&nbsp;<a href="register.html">Registrarse</a>&nbsp;<a href="help.html">Ayuda</a><form class="searchForm" method="get"><input type="text" aria-label="buscar denuncia" title="Buscar denuncia" id="buscarDenuncia" /><input id="boton-busqueda" type="image" alt="realizar busqueda" src="search-25.png" onsubmit="submit();" /></form>
+			<a href="login.html">Iniciar Sesión</a>&nbsp;<a href="register.html">Registrarse</a>&nbsp;<a href="help.html">Ayuda</a><form class="searchForm" method="get" action="buscarDenuncia.html"><input type="text" aria-label="buscar denuncia" title="Buscar denuncia" id="buscarDenuncia" /><input id="boton-busqueda" type="image" alt="realizar busqueda" src="search-25.png" onsubmit="submit();" /></form>
 		</div>
 	</header>
 	<nav>
@@ -25,10 +25,10 @@
 	</nav>
 	<main id="main">
 		<!--header interno -->
-		<div class="boxTitleLeft">Completar el formulario de registro</div>
+		<div class="boxTitleLeft">Resultados de la búsqueda</div>
 		<header class="inner-header">
-			Lo sentimos, este sitio está en construcción. Disculpe las molestias.
-			<img id="en_construccion" src="en_construccion.png" alt="El sitio está en construcción. Disculpe las molestias." />
+			<span class="primeraFilaRes">Texto buscado: &nbsp;&nbsp;&nbsp;</span><span class="segundaFila">Denuncia Pepito</span><br><br>
+			<span class="primeraFilaRes">Encontrados (1): </span><span class="segundaFila"><a href="ver-denuncia.html">Denuncia Pepito</a></span><br>
 		</header>	
 	</main>
 

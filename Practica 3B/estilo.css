@@ -27,7 +27,11 @@ caption{
     -moz-border-radius:10px;/*Para Firefox*/
     -o-border-radius:10px;/*Para Opera*/
     border-radius:10px;/*El estandar por defecto*/
-    background-color: green;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#080), to(#0F0));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #080, #0F0);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #080, #0F0);/*Para Opera*/
+    background-image: linear-gradient(top, #080, #0F0);/*El estandar por defecto*/
 }
 
 input#comentario{
@@ -48,7 +52,11 @@ input#comentario{
     -moz-border-radius:10px;/*Para Firefox*/
     -o-border-radius:10px;/*Para Opera*/
     border-radius:10px;/*El estandar por defecto*/
-    background-color: blue;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#005), to(#00F));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #005, #00F);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #005, #00F);/*Para Opera*/
+    background-image: linear-gradient(top, #005, #00F);/*El estandar por defecto*/
 }
 
 .container{
@@ -150,6 +158,10 @@ header{
 	float: left;
 }
 
+.tituloComentario{
+    font-weight: bold;
+}
+
 #section1{
 	float: left;
 }
@@ -165,6 +177,10 @@ header{
 
 .primeraFila{
 	float: left;
+}
+
+.primeraFilaRes{
+    float: left;
 }
 
 .boxTitleContainer{
@@ -341,7 +357,7 @@ hr#index{
 textarea{
 	float: left;
 	width: 240px;
-	height: 520px;
+	height: 100px;
 	margin-bottom: 20px;
 }
 

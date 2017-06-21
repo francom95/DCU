@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Realizar Denuncia - Ministerio de La Plata</title>
     <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts.js" ></script>
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
     <div class="boxTitleLeft">Formulario de Denuncia</div>
     <header class="inner-header">
 		<h2>Paso 3: Datos del reclamo</h2>
-		<form id="denunciaPaso2" action="">
+		<form id="denunciaPaso2" action="finalizarDenuncia.html">
 			<div class="filaFormulario">
 				<label for="diaFecha">Fecha: </label> 
 				<select id="diaFecha" aria-label="dia" name="diaFecha" aria-required="true" required>
@@ -67,8 +68,8 @@
 				<div id="hint">Pueden ser archivos de imagen, video o audio</div>
 			</div>
             <div class="botonesDenuncia">
-                <div class="boton"><input type="submit" name="submit" value="Finalizar y Enviar Denuncia" /></div>
-                <div class="boton"><input type="submit" name="submit" value="Volver" /></div>
+                <div class="boton"><input type="submit" name="continuar" value="Finalizar y Enviar Denuncia" onsubmit="formTres('continuar')" /></div>
+                <div class="boton"><input type="submit" name="volver" value="Volver" onclick="formTres('volver')" /></div>
             </div>
 		</form>
 		<p>* Campo obligatorio</p>
